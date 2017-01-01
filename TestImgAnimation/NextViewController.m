@@ -7,6 +7,7 @@
 //
 
 #import "NextViewController.h"
+#import <UIImageView+WebCache.h>
 
 @interface NextViewController ()
 
@@ -29,6 +30,14 @@
     NSArray *imgs = @[[UIImage imageNamed:@"img1"],[UIImage imageNamed:@"img2"]];
     imgView.image = [UIImage animatedImageWithImages:imgs duration:0.5];
     
+    
+    //SDWebImage  UIImage+GIF.m  UIImage create with animatedImageWithImages
+    //So sdImgView has the bug too.
+    
+    UIImageView *sdImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 350, 150, 150)];
+    sdImgView.backgroundColor = [UIColor cyanColor];
+    [sdImgView sd_setImageWithURL:[NSURL URLWithString:@"https://d13yacurqjgara.cloudfront.net/users/288987/screenshots/1913272/depressed-slurp-cycle.gif"] placeholderImage:[UIImage imageNamed:@"default"]];
+    [self.view addSubview:sdImgView];
 }
 
 - (void)didReceiveMemoryWarning {

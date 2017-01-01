@@ -18,6 +18,8 @@
 		1805136A1E1901D800BF1086 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 180513681E1901D800BF1086 /* img1.png */; };
 		1805136B1E1901D800BF1086 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 180513691E1901D800BF1086 /* img2.png */; };
 		1805136E1E19024300BF1086 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805136D1E19024300BF1086 /* NextViewController.m */; };
+		180513701E1909AF00BF1086 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1805136F1E1909AF00BF1086 /* default.png */; };
+		32352885EB8D40619190E723 /* libPods-TestImgAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71DBEE1B4A6856B6824DBA7 /* libPods-TestImgAnimation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		180513691E1901D800BF1086 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		1805136C1E19024300BF1086 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		1805136D1E19024300BF1086 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		1805136F1E1909AF00BF1086 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		629AB62023517A4001189295 /* Pods-TestImgAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestImgAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestImgAnimation/Pods-TestImgAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		808A4827626A6C158D3AFCE2 /* Pods-TestImgAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestImgAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestImgAnimation/Pods-TestImgAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		B71DBEE1B4A6856B6824DBA7 /* libPods-TestImgAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestImgAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32352885EB8D40619190E723 /* libPods-TestImgAnimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,8 @@
 				1805134E1E19019300BF1086 /* TestImgAnimationTests */,
 				180513591E19019300BF1086 /* TestImgAnimationUITests */,
 				180513331E19019300BF1086 /* Products */,
+				8C1DC861BEF7370E9955EFBC /* Pods */,
+				DA2E1E471C1AB78D3162A209 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +117,7 @@
 		180513341E19019300BF1086 /* TestImgAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1805136F1E1909AF00BF1086 /* default.png */,
 				180513681E1901D800BF1086 /* img1.png */,
 				180513691E1901D800BF1086 /* img2.png */,
 				180513381E19019300BF1086 /* AppDelegate.h */,
@@ -151,6 +161,23 @@
 			path = TestImgAnimationUITests;
 			sourceTree = "<group>";
 		};
+		8C1DC861BEF7370E9955EFBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				808A4827626A6C158D3AFCE2 /* Pods-TestImgAnimation.debug.xcconfig */,
+				629AB62023517A4001189295 /* Pods-TestImgAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA2E1E471C1AB78D3162A209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B71DBEE1B4A6856B6824DBA7 /* libPods-TestImgAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1805135F1E19019300BF1086 /* Build configuration list for PBXNativeTarget "TestImgAnimation" */;
 			buildPhases = (
+				F90E0806B89ECC552FA90742 /* [CP] Check Pods Manifest.lock */,
 				1805132E1E19019300BF1086 /* Sources */,
 				1805132F1E19019300BF1086 /* Frameworks */,
 				180513301E19019300BF1086 /* Resources */,
+				368D6365B06F67A1BD2580F3 /* [CP] Embed Pods Frameworks */,
+				B54C18A49922927BDE1D97C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +292,7 @@
 				1805136A1E1901D800BF1086 /* img1.png in Resources */,
 				180513421E19019300BF1086 /* Assets.xcassets in Resources */,
 				180513401E19019300BF1086 /* Main.storyboard in Resources */,
+				180513701E1909AF00BF1086 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +311,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		368D6365B06F67A1BD2580F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestImgAnimation/Pods-TestImgAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54C18A49922927BDE1D97C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestImgAnimation/Pods-TestImgAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90E0806B89ECC552FA90742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1805132E1E19019300BF1086 /* Sources */ = {
@@ -434,6 +513,7 @@
 		};
 		180513601E19019300BF1086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808A4827626A6C158D3AFCE2 /* Pods-TestImgAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestImgAnimation/Info.plist;
@@ -445,6 +525,7 @@
 		};
 		180513611E19019300BF1086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629AB62023517A4001189295 /* Pods-TestImgAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestImgAnimation/Info.plist;
@@ -519,6 +600,7 @@
 				180513611E19019300BF1086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180513621E19019300BF1086 /* Build configuration list for PBXNativeTarget "TestImgAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +609,7 @@
 				180513641E19019300BF1086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		180513651E19019300BF1086 /* Build configuration list for PBXNativeTarget "TestImgAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +618,7 @@
 				180513671E19019300BF1086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
