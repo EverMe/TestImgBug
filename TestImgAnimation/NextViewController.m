@@ -32,7 +32,7 @@
     
     
     //SDWebImage  UIImage+GIF.m  UIImage create with animatedImageWithImages
-    //So sdImgView has the bug too.
+    //So sdImgView has the bug too . but it will display placeholderImage.this is the other problem I don't understand.
     
     UIImageView *sdImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 350, 150, 150)];
     sdImgView.backgroundColor = [UIColor cyanColor];
