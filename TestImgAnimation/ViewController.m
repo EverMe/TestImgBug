@@ -41,7 +41,7 @@
     
     //startAnimating
     UIImageView *imgView1 = [[UIImageView alloc] init];
-    imgView1.backgroundColor = [UIColor orangeColor];
+    imgView1.backgroundColor = [UIColor cyanColor];
     imgView1.frame = CGRectMake(100, 300, 50, 50);
     [self.view addSubview:imgView1];
     NSArray *imgs1 = @[[UIImage imageNamed:@"img1"],[UIImage imageNamed:@"img2"]];
