@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@property (strong) UIImageView *img1;
+@property (strong) UIImageView *imgView1;
 
 @end
 
@@ -21,8 +21,8 @@
     
     [super viewWillAppear:animated];
     
-    [self.img1 startAnimating];
-    NSLog(@"viewWillAppear 111111");
+    [self.imgView1 startAnimating];
+    NSLog(@"viewWillAppear ViewController");
     
 }
 
@@ -30,6 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //animatedImageWithImages
     UIImageView *imgView = [[UIImageView alloc] init];
     imgView.backgroundColor = [UIColor orangeColor];
     imgView.frame = CGRectMake(100, 200, 50, 50);
@@ -38,7 +39,7 @@
     imgView.image = [UIImage animatedImageWithImages:imgs duration:0.5];
     
     
-    
+    //startAnimating
     UIImageView *imgView1 = [[UIImageView alloc] init];
     imgView1.backgroundColor = [UIColor orangeColor];
     imgView1.frame = CGRectMake(100, 300, 50, 50);
@@ -48,7 +49,7 @@
     [imgView1 setAnimationDuration:1];
     [imgView1 setAnimationRepeatCount:HUGE_VAL];
     [imgView1 startAnimating];
-    self.img1 = imgView1;
+    self.imgView1 = imgView1;
     
 }
 
